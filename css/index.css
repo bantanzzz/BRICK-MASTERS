@@ -123,3 +123,74 @@ section {
   background-size: cover;
   height: calc(100vh - 80px);
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .image-section {
+    flex: 1;
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .text-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .text-section h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .enquire-btn {
+    background-color: #d47600;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .enquire-btn:hover {
+    background-color: #b36100;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .text-section {
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .text-section h1 {
+      font-size: 1.8em;
+    }
+  
+    .enquire-btn {
+      width: 100%;
+      padding: 12px;
+    }
+  }
+  
