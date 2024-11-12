@@ -193,4 +193,51 @@ section {
       padding: 12px;
     }
   }
+  .content-A{
+    text-align: center;
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .brick-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .brick-item {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .brick-item img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .brick-item p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .brick-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .brick-item {
+      width: 80%;
+    }
+  }
   
