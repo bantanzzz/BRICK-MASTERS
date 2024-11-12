@@ -1,0 +1,74 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .about-masters {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .text-masters {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .text-masters h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .text-masters p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .image-masters {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-masters img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .about-masters {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-masters {
+      padding-right: 0;
+    }
+  
+    .image-masters img {
+      max-width: 100%;
+    }
+  }
+  
